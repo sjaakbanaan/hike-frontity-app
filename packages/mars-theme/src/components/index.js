@@ -15,13 +15,14 @@ import PageError from "./page-error";
 const Theme = ({ state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
+  const { description } = state.source.get("nameAndDescription"); // get real site title
 
   return (
     <>
       {/* Add some metatags to the <head> of the HTML. */}
       <Title />
       <Head>
-        <meta name="description" content={state.frontity.description} />
+        <meta name="description" content={description} />
         <html lang="en" />
       </Head>
 

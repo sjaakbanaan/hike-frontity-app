@@ -5,13 +5,14 @@ import Nav from "./nav";
 import MobileMenu from "./menu";
 
 const Header = ({ state }) => {
+  const { name, description } = state.source.get("nameAndDescription");
   return (
     <>
       <Container>
         <StyledLink link="/">
-          <Title>{state.frontity.title}</Title>
+          <Title>{name}</Title>
         </StyledLink>
-        <Description>{state.frontity.description}</Description>
+        <Description>{description}</Description>
         <MobileMenu />
       </Container>
       <Nav />

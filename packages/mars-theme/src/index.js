@@ -2,6 +2,39 @@ import Theme from "./components";
 import image from "@frontity/html2react/processors/image";
 import iframe from "@frontity/html2react/processors/iframe";
 
+const beforeSSR = async ({ libraries, actions }) => {
+  // Add image processor.
+  libraries.html2react.processors.push(image);
+
+  // Add the nameAndDescription handler.
+  libraries.source.handlers.push({
+    name: "nameAndDescription",
+    priority: 10,
+    pattern: "nameAndDescription",
+    func: async ({ route, state, libraries }) => {
+      // 1. Get response from api endpoint.
+      const response = await libraries.source.api.get({
+        endpoint: "/" // "/" is added after "/wp-json" so final url is "/wp-json/"
+      });
+
+      // 2. Extract relevant data from the response.
+      const { name, description } = await response.json();
+
+      // 3. Add it to the source.data object.
+      state.source.data[route].name = name;
+      state.source.data[route].description = description;
+    }
+  });
+
+  // Fetch the wp-json endpoint.
+  await actions.source.fetch("nameAndDescription");
+};
+
+const beforeCSR = ({ libraries }) => {
+  // Add image processor.
+  libraries.html2react.processors.push(image);
+};
+
 const marsTheme = {
   name: "@frontity/mars-theme",
   roots: {
@@ -37,6 +70,8 @@ const marsTheme = {
       closeMobileMenu: ({ state }) => {
         state.theme.isMobileMenuOpen = false;
       },
+      beforeSSR: beforeSSR,
+      beforeCSR: beforeCSR
     },
   },
   libraries: {

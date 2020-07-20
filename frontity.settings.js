@@ -18,20 +18,12 @@ const settings = {
               "/"
             ],
             [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
+              "Buying",
+              "/category/buying/"
             ],
             [
               "About Us",
-              "/about-us/"
+              "/about/"
             ]
           ],
           "featured": {
@@ -45,7 +37,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://test.frontity.org/wp-json"
+          "api": "https://ubierfestival.nl/wp-hike-test/wp-json"
         }
       }
     },

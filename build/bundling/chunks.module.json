@@ -1,0 +1,112 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.43.0",
+  "hash": "b956a54d8b00927a84d1",
+  "publicPath": "/static/",
+  "outputPath": "/mnt/c/Hike/frontity/hike-test-app/build/static",
+  "assetsByChunkName": {
+    "hike-test-app": [
+      "hike-test-app.module.js",
+      "hike-test-app.85574004d3bb51d8b8be.hot-update.js"
+    ],
+    "list": "list.module.js"
+  },
+  "assets": [
+    {
+      "name": "85574004d3bb51d8b8be.hot-update.json",
+      "size": 55,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "hike-test-app.85574004d3bb51d8b8be.hot-update.js",
+      "size": 20779,
+      "chunks": [
+        "hike-test-app"
+      ],
+      "chunkNames": [
+        "hike-test-app"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "hike-test-app.module.js",
+      "size": 5048533,
+      "chunks": [
+        "hike-test-app"
+      ],
+      "chunkNames": [
+        "hike-test-app"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 47649,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "hike-test-app": {
+      "chunks": [
+        "hike-test-app"
+      ],
+      "assets": [
+        "hike-test-app.module.js",
+        "hike-test-app.85574004d3bb51d8b8be.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "hike-test-app": {
+      "chunks": [
+        "hike-test-app"
+      ],
+      "assets": [
+        "hike-test-app.module.js",
+        "hike-test-app.85574004d3bb51d8b8be.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
