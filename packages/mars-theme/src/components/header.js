@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
+import tw from "twin.macro";
 
 const Header = ({ state }) => {
   const { name, description } = state.source.get("nameAndDescription");
@@ -14,6 +15,7 @@ const Header = ({ state }) => {
         </StyledLink>
         <Description>{description}</Description>
         <MobileMenu />
+        <Button>Knop</Button>
       </Container>
       <Nav />
     </>
@@ -22,6 +24,10 @@ const Header = ({ state }) => {
 
 // Connect the Header component to get access to the `state` in it's `props`
 export default connect(Header);
+
+const Button = styled("button")`
+  ${tw`font-mono text-lg bg-blue-300 border-none my-2 py-2 cursor-pointer hover:bg-blue-500`};
+`;
 
 const Container = styled.div`
   width: 848px;

@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.43.0",
-  "hash": "b956a54d8b00927a84d1",
+  "hash": "785a9d911e8ae7c5790c",
   "publicPath": "/static/",
   "outputPath": "/mnt/c/Hike/frontity/hike-test-app/build/static",
   "assetsByChunkName": {
     "hike-test-app": [
       "hike-test-app.module.js",
-      "hike-test-app.85574004d3bb51d8b8be.hot-update.js"
+      "hike-test-app.270b3f73c462316e750b.hot-update.js"
     ],
     "list": "list.module.js"
   },
   "assets": [
     {
-      "name": "85574004d3bb51d8b8be.hot-update.json",
+      "name": "270b3f73c462316e750b.hot-update.json",
       "size": 55,
       "chunks": [],
       "chunkNames": [],
@@ -25,8 +25,8 @@
       "emitted": false
     },
     {
-      "name": "hike-test-app.85574004d3bb51d8b8be.hot-update.js",
-      "size": 20779,
+      "name": "hike-test-app.270b3f73c462316e750b.hot-update.js",
+      "size": 60313,
       "chunks": [
         "hike-test-app"
       ],
@@ -41,7 +41,7 @@
     },
     {
       "name": "hike-test-app.module.js",
-      "size": 5048533,
+      "size": 5045249,
       "chunks": [
         "hike-test-app"
       ],
@@ -72,7 +72,7 @@
       ],
       "assets": [
         "hike-test-app.module.js",
-        "hike-test-app.85574004d3bb51d8b8be.hot-update.js"
+        "hike-test-app.270b3f73c462316e750b.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -85,7 +85,7 @@
       ],
       "assets": [
         "hike-test-app.module.js",
-        "hike-test-app.85574004d3bb51d8b8be.hot-update.js"
+        "hike-test-app.270b3f73c462316e750b.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

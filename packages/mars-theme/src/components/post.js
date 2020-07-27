@@ -141,7 +141,7 @@ const Content = styled.div`
   }
 
   a {
-    color: rgb(31, 56, 197);
+    color: red;
     text-decoration: underline;
   }
 

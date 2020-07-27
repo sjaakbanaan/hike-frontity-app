@@ -7,6 +7,7 @@ import Post from "./post";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
+import tw from "twin.macro";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -15,6 +16,7 @@ import PageError from "./page-error";
 const Theme = ({ state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
+
   const { description } = state.source.get("nameAndDescription"); // get real site title
 
   return (
@@ -64,19 +66,6 @@ const globalStyles = css`
   }
 `;
 
-const HeadContainer = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #1f38c5;
-`;
+const HeadContainer = tw.div`flex items-center flex-col bg-blue-500`;
 
-const Main = styled.div`
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(
-    180deg,
-    rgba(66, 174, 228, 0.1),
-    rgba(66, 174, 228, 0)
-  );
-`;
+const Main = tw.div`flex justify-center`;
