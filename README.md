@@ -9,6 +9,10 @@ This project was bootstrapped with [Frontity](https://frontity.org/).
 - [Create a production-ready build](#create-a-production-ready-build)
 - [Deploy](#deploy)
 
+### Updated Mars theme
+
+default Mars theme but with ACF and Tailwind.
+
 ### Launch a development server
 
 ```
@@ -20,16 +24,6 @@ Runs the app in development mode. Open http://localhost:3000 to view it in the b
 The site will automatically reload if you make changes inside the `packages` folder. You will see the build errors in the console.
 
 > Have a look at our [Quick Start Guide](https://docs.frontity.org/getting-started/quick-start-guide)
-
-### Create your custom theme
-
-```
-npx frontity create-package your-custom-theme
-```
-
-Use the command `npx frontity create-package` to create a new package that can be set in your `frontity.settings.js` as your theme
-
-> Have a look at our blog post [How to Create a React WordPress Theme in 30 Minutes](https://frontity.org/blog/how-to-create-a-react-theme-in-30-minutes/)
 
 ### Create a production-ready build
 
