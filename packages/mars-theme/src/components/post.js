@@ -13,6 +13,8 @@ const Post = ({ state, actions, libraries }) => {
   const author = state.source.author[post.author];
   // Get a human readable date.
   const date = new Date(post.date);
+  // get acf field
+  const payoff = post.acf["pay-off"];
 
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
@@ -32,6 +34,7 @@ const Post = ({ state, actions, libraries }) => {
     <Container>
       <div>
         <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+        <Payoff>{payoff}</Payoff>
 
         {/* Only display author and date on posts */}
         {data.isPost && (
@@ -88,6 +91,12 @@ const Author = styled.p`
   color: rgba(12, 17, 43, 0.9);
   font-size: 0.9em;
   display: inline;
+`;
+
+const Payoff = styled.h2`
+  margin: 0;
+  margin-bottom: 24px;
+  color: rgba(12, 17, 43);
 `;
 
 const DateWrapper = styled.p`
