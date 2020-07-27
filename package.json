@@ -22,7 +22,7 @@
     "babel-plugin-macros": "^2.8.0",
     "frontity": "^1.10.0",
     "react-spring": "^8.0.27",
-    "tailwindcss": "^1.5.1",
-    "twin.macro": "^1.5.1"
+    "tailwindcss": "^1.5.2",
+    "twin.macro": "^1.6.3"
   }
 }
